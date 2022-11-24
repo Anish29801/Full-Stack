@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended : true}));
 
-connToDB;
+connToDB();
 app.use("/",routes);
 
 module.exports = app;
